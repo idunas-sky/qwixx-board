@@ -1,0 +1,21 @@
+@import 'variables';
+
+app-row {
+    margin-bottom: 2px;
+    padding: 4px;
+    &.red {
+        background-color: $colorRed;
+    }
+
+    &.yellow {
+        background-color: $colorYellow;
+    }
+
+    &.green {
+        background-color: $colorGreen;
+    }
+
+    &.blue {
+        background-color: $colorBlue;
+    }
+}

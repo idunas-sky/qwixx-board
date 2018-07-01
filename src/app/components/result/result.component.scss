@@ -1,0 +1,42 @@
+@import 'variables';
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+
+    &.score {
+        width: 12%;
+        border: solid 3px white;
+    }
+
+    &.score-red {
+        border-color: $colorRed;
+    }
+
+    &.score-yellow {
+        border-color: $colorYellow;
+    }
+
+    &.score-green {
+        border-color: $colorGreen;
+    }
+
+    &.score-blue {
+        border-color: $colorBlue;
+    }
+
+    &.score-faults {
+        border-color: $colorFault;
+    }
+
+    &.score-total {
+        border-color: $colorResult;
+    }
+}

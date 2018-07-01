@@ -1,0 +1,6 @@
+<app-tile
+    [class]="tile.status"
+    *ngFor="let tile of row.tiles"
+    [tile]="tile"
+    (click)="onTileClicked(tile)"></app-tile>
+<button (click)="onCloseRowClicked()">X</button>
