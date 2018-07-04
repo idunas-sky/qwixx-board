@@ -1,13 +1,24 @@
-<div>
-    <span class="score score-red">{{move.redRow.score}}</span>
-    <span>+</span>
-    <span class="score score-yellow">{{move.yellowRow.score}}</span>
-    <span>+</span>
-    <span class="score score-green">{{move.greenRow.score}}</span>
-    <span>+</span>
-    <span class="score score-blue">{{move.blueRow.score}}</span>
-    <span>&minus;</span>
-    <span class="score score-faults">{{move.failScore}}</span>
-    <span>=</span>
-    <span class="score score-total">{{move.totalScore}}</span>
+<div class="score score-red">
+    <span>{{move.redRow.score}}</span>
+</div>
+<span class="score-operator">+</span>
+
+<div class="score score-yellow">
+    <span>{{move.yellowRow.score}}</span>
+</div>
+<span class="score-operator">+</span>
+<div class="score score-green">
+    <span>{{move.greenRow.score}}</span>
+</div>
+<span class="score-operator">+</span>
+<div class="score score-blue">
+    <span>{{move.blueRow.score}}</span>
+</div>
+<span class="score-operator">&minus;</span>
+<div class="score score-faults">
+    <span>{{move.failScore}}</span>
+</div>
+<span class="score-operator">=</span>
+<div class="score score-total">
+    <span>{{move.totalScore}}</span>
 </div>

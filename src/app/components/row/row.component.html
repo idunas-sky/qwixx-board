@@ -3,4 +3,5 @@
     *ngFor="let tile of row.tiles"
     [tile]="tile"
     (click)="onTileClicked(tile)"></app-tile>
-<button (click)="onCloseRowClicked()">X</button>
+
+<button [class.unavailable]="row.isLocked" (click)="onCloseRowClicked()">&#10008;</button>

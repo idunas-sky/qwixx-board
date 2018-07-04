@@ -1,13 +1,27 @@
-:host {
-    display: flex;
+@import 'variables';
 
+button {
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.5) none;
+    border-radius: 10vmin;
+    width: 10vmin;
+    height: 10vmin;
+    align-self: center;
+    justify-self: center;
+    margin-right: 2vh;
+
+    &:active, &.unavailable {
+        background: transparent;
+    }
 }
 
+/*
 app-tile, button {
-    flex-basis: 0;
-    flex-grow: 1;
+    font-size: $fontSize;
+    font-weight: bold;
+    //padding: $btnPadding;
 
-    padding: 8px 0;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -15,5 +29,6 @@ app-tile, button {
 }
 
 app-tile {
-    border: solid 2px rgba(0, 0, 0, 0.3);
+    //border: solid 2px rgba(0, 0, 0, 0.3);
 }
+*/

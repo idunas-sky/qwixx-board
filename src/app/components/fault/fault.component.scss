@@ -1,0 +1,41 @@
+@import 'variables';
+
+#btn-faults {
+    display: flex;
+    background-color: $colorFault;
+
+    > button {
+        flex: 1 0 0;
+
+        outline: none;
+
+        //background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        border-radius: 1vh;
+        margin: 2vh 1px;
+        background: rgba(255, 255, 255, 0.8) none;
+
+        &:nth-child(1) {
+            margin-left: 2vh;
+        }
+
+        &:nth-child(4) {
+            margin-right: 2vh;
+        }
+
+        &.crossed {
+            background: rgba(255, 255, 255, 0.0);
+        }
+    }
+}
+
+/*
+
+label {
+    text-align: right;
+
+    > span {
+        padding-right: 5px;
+    }
+}
+*/

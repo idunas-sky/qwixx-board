@@ -1,11 +1,16 @@
-<app-row class="red" [row]="game.currentMove.redRow"></app-row>
-<app-row class="yellow" [row]="game.currentMove.yellowRow"></app-row>
-<app-row class="green" [row]="game.currentMove.greenRow"></app-row>
-<app-row class="blue" [row]="game.currentMove.blueRow"></app-row>
+<div class="wrapper">
+    <header>Header</header>
+    <div class="grid">
+        <app-row class="row red" [row]="game.currentMove.redRow"></app-row>
+        <app-row class="row yellow" [row]="game.currentMove.yellowRow"></app-row>
+        <app-row class="row green" [row]="game.currentMove.greenRow"></app-row>
+        <app-row class="row blue" [row]="game.currentMove.blueRow"></app-row>
 
-<div>
-    <button>Back</button>
-    <app-fault style="float: right;"></app-fault>
+        <div class="row">
+            <button id="btn-back">Back</button>
+            <app-fault></app-fault>
+        </div>
+
+        <app-result class="row" [move]="game.currentMove"></app-result>
+    </div>
 </div>
-
-<app-result [move]="game.currentMove"></app-result>

@@ -1,19 +1,21 @@
 @import 'variables';
 
-div {
-    display: flex;
-    justify-content: space-between;
+span {
+    text-align: center;
+    user-select: none;
+
+    &.score-operator {
+        font-size: $fontSize * 1.4;
+    }
 }
 
-span {
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-    align-self: center;
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &.score {
-        width: 12%;
-        border: solid 3px white;
+        border: solid 2vh white;
     }
 
     &.score-red {

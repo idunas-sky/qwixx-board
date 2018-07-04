@@ -1,8 +1,6 @@
 @import 'variables';
 
-app-row {
-    margin-bottom: 2px;
-    padding: 4px;
+.row {
     &.red {
         background-color: $colorRed;
     }

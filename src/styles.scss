@@ -1,5 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import 'grid';
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/roboto/Roboto-Bold.ttf');
+}
+
+body, button {
+    font-family: 'Roboto', serif;
+    font-size: $fontSize;
+}
+
+body {
+    margin: 0;
+}
+
 /*
+
+.row {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+
+    app-tile, .tile {
+        flex: 1 0 0;
+    }
+
+    #btn-back {
+        flex: 2 0 0;
+    }
+
+    app-fault {
+        flex: 10 0 0;
+        display: flex;
+
+        label {
+            flex: 6 0 0;
+        }
+
+        button {
+            flex: 1 0 0;
+        }
+    }
+
+    .score {
+        flex: 2 0 auto;
+    }
+
+    .score-operator {
+        flex: 1 0 auto;
+    }
+}
+
+button {
+    padding: 0;
+    //margin: 8px;
+    border: 0;
+    width: 90%;
+}
+
+/*
+
 button {
     border: solid 1px #ccc;
     background-color: white;
